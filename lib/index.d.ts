@@ -15,9 +15,9 @@ interface IConfig {
     },
     environment: string,
     sentry: {
-        dsn: string,
+        dsn?: string,
+        level?: string
         enabled: boolean,
-        level: string
     }
 }
 
