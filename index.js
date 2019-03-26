@@ -1,5 +1,5 @@
-import {validationResult} from "express-validator/check";
-import * as Raven from 'raven';
+const {validationResult} = require("express-validator/check");
+const Raven  = require('raven');
 
 const handle200 = (req, res, next, data) => {
     res.status(200).json(data);
