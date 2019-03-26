@@ -55,7 +55,7 @@ function startRaven({config}) {
     }
 }
 
-interface ActionBuilder {
+export interface ActionBuilder {
     (actionFn: ActionFn): (req: Request, res: Response, next: NextFunction) => void | Promise<void>;
 }
 
