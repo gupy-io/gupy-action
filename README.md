@@ -1,1 +1,1 @@
-# gupy-express-action
+# gupy-action
