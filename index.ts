@@ -55,7 +55,11 @@ function startRaven({config}) {
     }
 }
 
-export const actionFactory = ({config}) => {
+interface ActionBuilder {
+    (actionFn: ActionFn): (req: Request, res: Response, next: NextFunction) => void | Promise<void>;
+}
+
+export const actionBuilderFactory = ({config}): ActionBuilder => {
     startRaven({config});
     return (actionFn: ActionFn) =>
         (req: Request, res: Response, next: NextFunction) => {
