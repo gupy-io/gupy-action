@@ -29,10 +29,10 @@ const handle500 = (req, res, next, err) => {
 
 let raven;
 
-export const setup = ({config}) => {
+module.exports.setupAction = ({config}) => {
     const options = {
         release: config.package.version,
-        environment: config.env,
+        environment: config.environment,
         autoBreadcrumbs: true,
         captureUnhandledRejections: true,
         tags: {
