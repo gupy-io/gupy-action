@@ -19,6 +19,7 @@
   "homepage": "https://github.com/gupy-io/gupy-express-action#readme",
   "dependencies": {
     "express": "^4.16.4",
-    "express-validator": "^5.3.1"
+    "express-validator": "^5.3.1",
+    "raven": "^2.6.4"
   }
 }
