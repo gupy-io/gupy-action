@@ -1,5 +1,5 @@
 {
-  "name": "gupy-express-action",
+  "name": "gupy-action",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,18 +9,26 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gupy-io/gupy-express-action.git"
+    "url": "git+https://github.com/gupy-io/gupy-action.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gupy-io/gupy-express-action/issues"
+    "url": "https://github.com/gupy-io/gupy-action/issues"
   },
-  "homepage": "https://github.com/gupy-io/gupy-express-action#readme",
+  "homepage": "https://github.com/gupy-io/gupy-action#readme",
   "dependencies": {
     "express": "^4.16.4",
     "express-validator": "^5.3.1",
+    "newrelic": "^5.6.2",
+    "proxyquire": "^2.1.0",
     "raven": "^2.6.4"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2",
+    "nyc": "^13.3.0",
+    "sinon": "^7.3.1"
   }
 }

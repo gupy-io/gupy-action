@@ -19,6 +19,9 @@ interface IConfig {
         level?: string
         enabled: boolean,
     }
+    newrelic:{
+        enabled: boolean
+    }
 }
 
 export const setupAction: ({config}: { config: IConfig }) => void;
